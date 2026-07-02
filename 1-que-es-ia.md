@@ -24,6 +24,14 @@ No es magia. No es un robot con consciencia. Es un programa que ha visto tantís
 
 ---
 
+### Para ver antes de continuar
+
+DotCSV conecta la IA con cosas que ya conoces — perfecto para arrancar el día:
+
+[DotCSV — Lo que YA sabes sobre Inteligencia Artificial (≈3 min)](https://www.youtube.com/watch?v=i1wGMQ3TjzA)
+
+---
+
 ## Una historia en 5 minutos
 
 La IA no es nueva. Lo que sí es nuevo es que por fin funciona.
@@ -183,28 +191,34 @@ En grupos de 2-3 personas:
 
 ---
 
-## Cierre del día — Tu proyecto personal
+## Trabajo en equipo — ¿IA o no IA?
 
-A partir de mañana, cada sesión de los últimos 30 minutos la dedicarás a tu **proyecto personal**: algo real que quieras construir, mejorar o automatizar con IA durante el curso.
+*(30 minutos)*
 
-Puede ser cualquier cosa:
-- Un blog o newsletter con ayuda de IA
-- Automatizar el seguimiento de clientes de tu negocio
-- Crear material educativo para tu clase
-- Gestionar mejor tu correo o agenda
-- Desarrollar una idea que llevas tiempo queriendo arrancar
+### El reto
 
-### Tarea de hoy
+En equipos de 2 personas, clasificad estos 12 productos y servicios según el tipo de IA que usan:
 
-Escribe en un documento (o en papel) lo siguiente:
+| Producto / Servicio | ¿Usa IA? | Tipo (estrecha / generativa) |
+|---|---|---|
+| Google Maps en tiempo real | | |
+| Filtro de spam del correo | | |
+| ChatGPT escribiendo un email | | |
+| Reconocimiento facial del móvil | | |
+| Midjourney generando una imagen | | |
+| Spotify recomendando canciones | | |
+| El corrector del Word | | |
+| Siri respondiendo preguntas | | |
+| Suno componiendo música | | |
+| El detector de fraude del banco | | |
+| GitHub Copilot escribiendo código | | |
+| El feed de TikTok | | |
 
-> **Mi proyecto personal**
->
-> - ¿Qué quiero conseguir con IA al terminar este curso?
-> - ¿Qué problema concreto quiero resolver o qué tarea quiero mejorar?
-> - ¿Cómo sabré que el proyecto ha sido un éxito?
+### Debate final
 
-No tiene que ser perfecto. Evolucionará durante el curso. Lo importante es tener un punto de partida.
+Poned en común vuestras respuestas. Para los casos en que no estéis de acuerdo entre equipos, debatid:
+- ¿Por qué creéis que es de un tipo u otro?
+- ¿Hay algún caso que podría ser los dos a la vez?
 
 ---
 
