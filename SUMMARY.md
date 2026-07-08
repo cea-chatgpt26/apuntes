@@ -10,7 +10,7 @@
 
 * [Día 4 — Prompt Engineering I: Few-Shot Prompting](4-prompt-engineering-1.md)
 * [Día 5 — Prompt Engineering II: Chain-of-Thought e Iteración](5-prompt-engineering-2.md)
-* Día 6 — Prompts por objetivo y sector
+* [Día 6 — Prompts por objetivo y sector](6-prompts-objetivo-sector.md)
 * Día 7 — IA generativa: imágenes
 * Día 8 — IA generativa: vídeo y audio
 * Día 9 — IA para código y agentes

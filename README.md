@@ -24,7 +24,7 @@ Cada día: 65 min contenido → 20 min descanso → 65 min contenido → 30 min 
 |---|---|---|
 | 4 | [Prompt Engineering I: Few-Shot Prompting](4-prompt-engineering-1.md) | ✅ |
 | 5 | [Prompt Engineering II: Chain-of-Thought e Iteración](5-prompt-engineering-2.md) | ✅ |
-| 6 | Prompts por objetivo y sector | ⬜ |
+| 6 | [Prompts por objetivo y sector](6-prompts-objetivo-sector.md) | ✅ |
 | 7 | IA generativa: imágenes (DALL·E, Midjourney, Stable Diffusion) | ⬜ |
 | 8 | IA generativa: vídeo y audio (Sora, Runway, ElevenLabs, Suno) | ⬜ |
 | 9 | IA para código y agentes (Copilot, Cursor, Claude Code) | ⬜ |
@@ -83,4 +83,5 @@ Todos los días siguen el mismo patrón:
 | 3 | Caza de alucinaciones | Competición para encontrar la alucinación más elaborada |
 | 4 | El prompt perfecto | Cada equipo usa una técnica distinta, votación ciega |
 | 5 | El prompt en 3 rondas | Mismo problema, iteración progresiva en equipo |
-| 6-20 | Por definir | — |
+| 6 | Prompts a medida | Tarjetas de sector + objetivo, adivinar a ciegas el resultado |
+| 7-20 | Por definir | — |
