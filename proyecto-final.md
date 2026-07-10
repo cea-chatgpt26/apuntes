@@ -9,7 +9,7 @@ Hay dos entregas, no una:
 | | Qué es | Cuándo se construye |
 |---|---|---|
 | **Mini-proyecto** | Una automatización pequeña y sencilla en Make, para tener algo funcionando pronto | Días 12-14 (Make I, II y III) |
-| **Proyecto grande** | El mismo tipo de automatización, pero más completa: con contenido generado por IA (texto/imagen/vídeo/audio) integrado en el flujo | Se define hoy, se alimenta en los días 15-16, se construye en el día 19 y se presenta en el día 20 |
+| **Proyecto grande** | El mismo tipo de automatización, pero más completa: con contenido generado por IA (texto/imagen/vídeo/audio) integrado en el flujo | Se define en el día 12, se alimenta en los días 15-16, se construye en el día 19 y se presenta en el día 20 |
 
 ---
 
@@ -17,7 +17,7 @@ Hay dos entregas, no una:
 
 | Días | Fase | Qué hacéis |
 |---|---|---|
-| **10-11** | Elegir y definir | Elegís vuestra idea de proyecto y escribís el brief de una página (plantilla más abajo) |
+| **12** | Elegir y definir | Elegís vuestra idea de proyecto y escribís el brief de una página (plantilla más abajo), antes de construir el primer escenario en Make |
 | **12-14** | Mini-proyecto (Make) | Construís una primera automatización sencilla en Make — vuestra idea, en versión mínima |
 | **15-16** | Prototipar contenido | Generáis manualmente (sin automatizar aún) los textos, imágenes o vídeos que necesitará el proyecto grande |
 | **17-18** | Reflexión + más herramientas | Con el mini-proyecto ya construido, reflexionáis sobre el impacto de la IA en el trabajo y ampliáis vuestra caja de herramientas |

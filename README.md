@@ -36,11 +36,11 @@ Cada día: 65 min contenido → 20 min descanso → 65 min contenido → 30 min 
 ## Módulo 3 — Aplicaciones Prácticas y Proyecto
 *27 horas · Días 12-20*
 
-> A partir del día 10 elegís vuestro [proyecto del curso](proyecto-final.md): mini-proyecto con Make (días 12-14) + proyecto grande (integrado en el día 19, presentado en el día 20).
+> A partir del día 12 elegís vuestro [proyecto del curso](proyecto-final.md): mini-proyecto con Make (días 12-14) + proyecto grande (integrado en el día 19, presentado en el día 20).
 
 | Día | Archivo | Estado |
 |---|---|---|
-| 12 | Make I: primera automatización | ⬜ |
+| 12 | [Make I: primera automatización](modulo-3-aplicaciones-practicas/dia-12-make-i-primera-automatizacion.md) | ✅ |
 | 13 | Make II: nodo OpenAI y lógica condicional | ⬜ |
 | 14 | Make III: flujos avanzados y los 5 flujos del curso | ⬜ |
 | 15 | Productividad con ChatGPT | ⬜ |
@@ -91,6 +91,7 @@ Todos los días siguen el mismo patrón:
 | 9 | El objetivo, no el prompt | Mismo objetivo de negocio, 4 configuraciones (prompt directo, Deep Research, GPT+Deep Research, encadenado manual), puesta en común |
 | 10 | El comité de ética | Debate por roles (marketing, legal, artista, protección de datos) sobre una campaña generada por IA, votación conjunta |
 | 11 | ¿Real o generado? | 8 piezas de contenido real/deepfake, votación y justificación por equipo, puntuación por acierto |
-| 12-16 | Por definir | — |
+| 12 | Carrera de automatizaciones | Cada pareja recibe un disparador distinto (formulario, email programado, hoja de cálculo) y construye el escenario de dos módulos lo más rápido posible, probando con "Run once" |
+| 13-16 | Por definir | — |
 | 17 | El mapa de tareas | Clasificar tareas de una profesión ajena por nivel de automatización, puesta en común |
 | 18-20 | Por definir | — |

@@ -131,14 +131,4 @@ Reflexión final: ¿ha cambiado tu opinión inicial después de escuchar los otr
 
 ---
 
-## Elige tu proyecto
-
-A partir de hoy empieza vuestro **proyecto del curso**: una automatización con IA + Make que os sirva como pieza de portfolio para enseñar a un futuro empleador. Es un proyecto libre — puede estar orientado a buscar empleo o a cualquier otro problema real del sector al que queréis volver. No hace falta construir nada todavía — hoy solo elegís la idea y escribís un brief de una página, para llegar a Make (día 12) sabiendo exactamente qué queréis automatizar.
-
-Consulta el menú de ideas, la plantilla de brief y el calendario completo en [proyecto-final.md](../proyecto-final.md).
-
-> *Por qué ahora:* acabáis de ver qué datos no debéis compartir con una IA (privacidad) y qué contenido generado hay que etiquetar (derechos de autor, día 11). Elegir el proyecto con esto fresco evita diseñar algo que luego tengáis que rehacer.
-
----
-
 *Mañana: Desafíos sociales — deepfakes, regulación y la Ley de IA de la UE.*

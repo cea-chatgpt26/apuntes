@@ -33,6 +33,8 @@ Hace unos años, crear un vídeo falso convincente requería un equipo técnico 
 - **Estafas por voz clonada:** llamadas donde se clona la voz de un familiar o de un directivo de empresa pidiendo una transferencia urgente. Ha causado pérdidas millonarias a empresas reales.
 - **Vídeos falsos de políticos o famosos:** declaraciones que nunca se hicieron, usadas para desinformar antes de elecciones o para dañar la reputación de alguien.
 
+[Vídeo de Youtube 5 minutos hablando de las deepfake](https://www.youtube.com/watch?v=pn89EGzfuk8)
+
 ### Cómo protegerte y detectarlos
 
 No hay un método infalible, pero hay señales de alerta:
