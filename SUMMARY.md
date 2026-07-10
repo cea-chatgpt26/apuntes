@@ -18,15 +18,19 @@
 * [Día 9 — IA para código y agentes](modulo-2-desafios-y-avances/dia-9-ia-para-codigo-y-agentes.md)
 * [Día 10 — Desafíos éticos](modulo-2-desafios-y-avances/dia-10-desafios-eticos.md)
 * [Día 11 — Desafíos sociales](modulo-2-desafios-y-avances/dia-11-desafios-sociales.md)
-* [Día 12 — Futuro del trabajo con IA](modulo-2-desafios-y-avances/dia-12-futuro-del-trabajo-con-ia.md)
-* [Día 13 — El ecosistema actual de IA](modulo-2-desafios-y-avances/dia-13-el-ecosistema-actual-de-ia.md)
 
-## Módulo 3 — Aplicaciones Prácticas
+## Proyecto del curso
 
-* [Día 14 — Productividad con ChatGPT](modulo-3-aplicaciones-practicas/dia-14-productividad-con-chatgpt.md)
-* [Día 15 — Creación de contenido con IA](modulo-3-aplicaciones-practicas/dia-15-creacion-de-contenido-con-ia.md)
-* [Día 16 — Make I: primera automatización](modulo-3-aplicaciones-practicas/dia-16-make-i-primera-automatizacion.md)
-* [Día 17 — Make II: nodo OpenAI y lógica condicional](modulo-3-aplicaciones-practicas/dia-17-make-ii-nodo-openai-y-logica-condicional.md)
-* [Día 18 — Make III: flujos avanzados](modulo-3-aplicaciones-practicas/dia-18-make-iii-flujos-avanzados.md)
+* [Vuestro proyecto del curso](proyecto-final.md)
+
+## Módulo 3 — Aplicaciones Prácticas y Proyecto
+
+* [Día 12 — Make I: primera automatización](modulo-3-aplicaciones-practicas/dia-12-make-i-primera-automatizacion.md)
+* [Día 13 — Make II: nodo OpenAI y lógica condicional](modulo-3-aplicaciones-practicas/dia-13-make-ii-nodo-openai-y-logica-condicional.md)
+* [Día 14 — Make III: flujos avanzados](modulo-3-aplicaciones-practicas/dia-14-make-iii-flujos-avanzados.md)
+* [Día 15 — Productividad con ChatGPT](modulo-3-aplicaciones-practicas/dia-15-productividad-con-chatgpt.md)
+* [Día 16 — Creación de contenido con IA](modulo-3-aplicaciones-practicas/dia-16-creacion-de-contenido-con-ia.md)
+* [Día 17 — Futuro del trabajo con IA](modulo-3-aplicaciones-practicas/dia-17-futuro-del-trabajo-con-ia.md)
+* [Día 18 — El ecosistema actual de IA](modulo-3-aplicaciones-practicas/dia-18-el-ecosistema-actual-de-ia.md)
 * [Día 19 — Integración total](modulo-3-aplicaciones-practicas/dia-19-integracion-total.md)
 * [Día 20 — Presentación final](modulo-3-aplicaciones-practicas/dia-20-presentacion-final.md)

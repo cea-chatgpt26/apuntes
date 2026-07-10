@@ -18,33 +18,35 @@ Cada día: 65 min contenido → 20 min descanso → 65 min contenido → 30 min 
 ---
 
 ## Módulo 2 — Desafíos y Avances en IA
-*30 horas · Días 4-13*
+*24 horas · Días 4-11*
 
 | Día | Archivo | Estado |
 |---|---|---|
 | 4 | [Prompt Engineering I: Few-Shot Prompting](4-prompt-engineering-1.md) | ✅ |
 | 5 | [Prompt Engineering II: Chain-of-Thought e Iteración](5-prompt-engineering-2.md) | ✅ |
 | 6 | [Prompts por objetivo y sector](6-prompts-objetivo-sector.md) | ✅ |
-| 7 | IA generativa: imágenes (DALL·E, Midjourney, Stable Diffusion) | ⬜ |
-| 8 | IA generativa: vídeo y audio (Sora, Runway, ElevenLabs, Suno) | ⬜ |
-| 9 | IA para código y agentes (Copilot, Cursor, Claude Code) | ⬜ |
-| 10 | Desafíos éticos: sesgos, privacidad, derechos de autor | ⬜ |
-| 11 | Desafíos sociales: deepfakes, regulación, Ley IA UE | ⬜ |
-| 12 | Futuro del trabajo con IA | ⬜ |
-| 13 | El ecosistema actual: Perplexity, NotebookLM, Gamma | ⬜ |
+| 7 | [IA generativa: imágenes (DALL·E, Midjourney, Stable Diffusion)](modulo-2-desafios-y-avances/dia-7-ia-generativa-imagenes.md) | ✅ |
+| 8 | [IA generativa: vídeo y audio (Sora, Runway, ElevenLabs, Suno)](modulo-2-desafios-y-avances/dia-8-ia-generativa-video-y-audio.md) | ✅ |
+| 9 | [IA para código y agentes (Copilot, Cursor, Claude Code)](modulo-2-desafios-y-avances/dia-9-ia-para-codigo-y-agentes.md) | ✅ |
+| 10 | [Desafíos éticos: sesgos, privacidad, derechos de autor](modulo-2-desafios-y-avances/dia-10-desafios-eticos.md) | ✅ |
+| 11 | [Desafíos sociales: deepfakes, regulación, Ley IA UE](modulo-2-desafios-y-avances/dia-11-desafios-sociales.md) | ✅ |
 
 ---
 
-## Módulo 3 — Aplicaciones Prácticas de ChatGPT
-*20 horas · Días 14-20*
+## Módulo 3 — Aplicaciones Prácticas y Proyecto
+*27 horas · Días 12-20*
+
+> A partir del día 10 elegís vuestro [proyecto del curso](proyecto-final.md): mini-proyecto con Make (días 12-14) + proyecto grande (integrado en el día 19, presentado en el día 20).
 
 | Día | Archivo | Estado |
 |---|---|---|
-| 14 | Productividad con ChatGPT | ⬜ |
-| 15 | Creación de contenido con IA | ⬜ |
-| 16 | Make I: primera automatización | ⬜ |
-| 17 | Make II: nodo OpenAI y lógica condicional | ⬜ |
-| 18 | Make III: flujos avanzados y los 5 flujos del curso | ⬜ |
+| 12 | Make I: primera automatización | ⬜ |
+| 13 | Make II: nodo OpenAI y lógica condicional | ⬜ |
+| 14 | Make III: flujos avanzados y los 5 flujos del curso | ⬜ |
+| 15 | Productividad con ChatGPT | ⬜ |
+| 16 | Creación de contenido con IA | ⬜ |
+| 17 | [Futuro del trabajo con IA](modulo-3-aplicaciones-practicas/dia-17-futuro-del-trabajo-con-ia.md) | ✅ |
+| 18 | El ecosistema actual: Perplexity, NotebookLM, Gamma | ⬜ |
 | 19 | Integración total: ChatGPT + herramientas + Make | ⬜ |
 | 20 | Presentación final | ⬜ |
 
@@ -84,4 +86,11 @@ Todos los días siguen el mismo patrón:
 | 4 | El prompt perfecto | Cada equipo usa una técnica distinta, votación ciega |
 | 5 | El prompt en 3 rondas | Mismo problema, iteración progresiva en equipo |
 | 6 | Prompts a medida | Tarjetas de sector + objetivo, adivinar a ciegas el resultado |
-| 7-20 | Por definir | — |
+| 7 | Duelo de imágenes | Mismo brief, 4 herramientas de imagen distintas, votación ciega |
+| 8 | Duelo audiovisual | Mismo brief, vídeo + audio con herramientas distintas por equipo, votación ciega |
+| 9 | El objetivo, no el prompt | Mismo objetivo de negocio, 4 configuraciones (prompt directo, Deep Research, GPT+Deep Research, encadenado manual), puesta en común |
+| 10 | El comité de ética | Debate por roles (marketing, legal, artista, protección de datos) sobre una campaña generada por IA, votación conjunta |
+| 11 | ¿Real o generado? | 8 piezas de contenido real/deepfake, votación y justificación por equipo, puntuación por acierto |
+| 12-16 | Por definir | — |
+| 17 | El mapa de tareas | Clasificar tareas de una profesión ajena por nivel de automatización, puesta en común |
+| 18-20 | Por definir | — |
