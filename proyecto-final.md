@@ -19,8 +19,8 @@ Hay dos entregas, no una:
 |---|---|---|
 | **12** | Elegir y definir | Elegís vuestra idea de proyecto y escribís el brief de una página (plantilla más abajo), antes de construir el primer escenario en Make |
 | **12-14** | Mini-proyecto (Make) | Construís una primera automatización sencilla en Make — vuestra idea, en versión mínima |
-| **15-16** | Prototipar contenido | Generáis manualmente (sin automatizar aún) los textos, imágenes o vídeos que necesitará el proyecto grande |
-| **17-18** | Reflexión + más herramientas | Con el mini-proyecto ya construido, reflexionáis sobre el impacto de la IA en el trabajo y ampliáis vuestra caja de herramientas |
+| **15-16** | *(Módulo aparte: Cline)* | No forma parte del proyecto — aprendéis a usar Cline como agente de código en Visual Studio Code |
+| **17-18** | Reflexión + más herramientas + prototipar contenido | Con el mini-proyecto ya construido, reflexionáis sobre el impacto de la IA en el trabajo, ampliáis vuestra caja de herramientas y generáis manualmente los textos, imágenes o vídeos que necesitará el proyecto grande |
 | **19** | Integración total | Construís el proyecto grande completo: automatización en Make + contenido generado por IA |
 | **20** | Presentación final | Presentáis el mini-proyecto y el proyecto grande al resto del grupo — vuestra pieza de portfolio lista para enseñar |
 

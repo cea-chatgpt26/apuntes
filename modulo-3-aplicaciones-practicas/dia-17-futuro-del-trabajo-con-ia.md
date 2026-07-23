@@ -8,7 +8,7 @@
 
 Rápido:
 
-> **¿Qué es un insumo (texto, imagen...) generado con IA que preparaste para alimentar tu proyecto grande, y qué automatización de Make podría consumirlo?**
+> **¿Para qué sirve un archivo `.clinerules` en un proyecto con Cline?**
 
 Si lo recuerdas sin mirar, estás listo. Si no, echa un vistazo al día 16 antes de continuar.
 
@@ -16,7 +16,7 @@ Si lo recuerdas sin mirar, estás listo. Si no, echa un vistazo al día 16 antes
 
 ## De construir con IA a entender su impacto
 
-En los últimos días habéis pasado de hablar de IA a **construir con ella**: montasteis un mini-proyecto con Make (días 12-14) y habéis estado generando contenido e insumos para vuestro proyecto grande (días 15-16). Ya no es teoría — habéis visto de primera mano cómo una tarea que antes os llevaba tiempo ahora la resuelve un flujo automatizado en segundos.
+En los últimos días habéis pasado de hablar de IA a **construir con ella**: montasteis un mini-proyecto con Make (días 12-14) y habéis usado Cline para crear y modificar archivos reales dentro de un editor de código (días 15-16). Ya no es teoría — habéis visto de primera mano cómo una tarea que antes os llevaba tiempo ahora la resuelve un flujo automatizado o un agente en minutos.
 
 Con esa experiencia reciente, hoy toca la pregunta que probablemente más os interesa en lo personal: **¿qué va a pasar con mi trabajo?** Y ahora podéis responderla con algo más que intuición — la acabáis de vivir.
 

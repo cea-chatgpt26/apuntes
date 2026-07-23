@@ -36,19 +36,19 @@ Cada día: 65 min contenido → 20 min descanso → 65 min contenido → 30 min 
 ## Módulo 3 — Aplicaciones Prácticas y Proyecto
 *27 horas · Días 12-20*
 
-> A partir del día 12 elegís vuestro [proyecto del curso](proyecto-final.md): mini-proyecto con Make (días 12-14) + proyecto grande (integrado en el día 19, presentado en el día 20).
+> A partir del día 10 elegís vuestro [proyecto del curso](proyecto-final.md): mini-proyecto con Make (días 12-14) + proyecto grande (integrado en el día 19, presentado en el día 20). Los días 15-16 son un módulo aparte sobre Cline en VS Code, no forman parte del proyecto.
 
 | Día | Archivo | Estado |
 |---|---|---|
 | 12 | [Make I: primera automatización](modulo-3-aplicaciones-practicas/dia-12-make-i-primera-automatizacion.md) | ✅ |
-| 13 | Make II: nodo OpenAI y lógica condicional | ⬜ |
-| 14 | Make III: flujos avanzados y los 5 flujos del curso | ⬜ |
-| 15 | Productividad con ChatGPT | ⬜ |
-| 16 | Creación de contenido con IA | ⬜ |
+| 13 | [Make II: nodo OpenAI y lógica condicional](modulo-3-aplicaciones-practicas/dia-13-make-ii-nodo-openai-y-logica-condicional.md) | ✅ |
+| 14 | [Make III: flujos avanzados](modulo-3-aplicaciones-practicas/dia-14-make-iii-flujos-avanzados.md) | ✅ |
+| 15 | [Cline I: instalación y primeros pasos](modulo-3-aplicaciones-practicas/dia-15-cline-i-instalacion-y-primeros-pasos.md) | ✅ |
+| 16 | [Cline II: flujos de trabajo reales](modulo-3-aplicaciones-practicas/dia-16-cline-ii-flujos-de-trabajo-reales.md) | ✅ |
 | 17 | [Futuro del trabajo con IA](modulo-3-aplicaciones-practicas/dia-17-futuro-del-trabajo-con-ia.md) | ✅ |
-| 18 | El ecosistema actual: Perplexity, NotebookLM, Gamma | ⬜ |
-| 19 | Integración total: ChatGPT + herramientas + Make | ⬜ |
-| 20 | Presentación final | ⬜ |
+| 18 | [El ecosistema actual de IA: Perplexity, NotebookLM, Gamma](modulo-3-aplicaciones-practicas/dia-18-el-ecosistema-actual-de-ia.md) | ✅ |
+| 19 | [Integración total](modulo-3-aplicaciones-practicas/dia-19-integracion-total.md) | ✅ |
+| 20 | [Presentación final](modulo-3-aplicaciones-practicas/dia-20-presentacion-final.md) | ✅ |
 
 ---
 
@@ -91,7 +91,12 @@ Todos los días siguen el mismo patrón:
 | 9 | El objetivo, no el prompt | Mismo objetivo de negocio, 4 configuraciones (prompt directo, Deep Research, GPT+Deep Research, encadenado manual), puesta en común |
 | 10 | El comité de ética | Debate por roles (marketing, legal, artista, protección de datos) sobre una campaña generada por IA, votación conjunta |
 | 11 | ¿Real o generado? | 8 piezas de contenido real/deepfake, votación y justificación por equipo, puntuación por acierto |
-| 12 | Carrera de automatizaciones | Cada pareja recibe un disparador distinto (formulario, email programado, hoja de cálculo) y construye el escenario de dos módulos lo más rápido posible, probando con "Run once" |
-| 13-16 | Por definir | — |
+| 12 | Reto por parejas | Montar en Make un escenario de Nivel 2/3 del catálogo del día, de un ámbito distinto al del propio proyecto |
+| 13 | Reto por parejas | Igual que el día 12, pero incluyendo un módulo de OpenAI y un Router condicional |
+| 14 | Reto por parejas | Añadir a un escenario ya construido una pieza nueva (Iterator/Aggregator, Data Store o manejo de errores) |
+| 15 | Mismo objetivo, instrucciones distintas | Cada persona construye la misma idea con Cline por separado y comparan resultados |
+| 16 | Rompe y repara | Una persona define reglas en `.clinerules`, la otra intenta incumplirlas sin saberlo; comprobar y usar checkpoints si hace falta |
 | 17 | El mapa de tareas | Clasificar tareas de una profesión ajena por nivel de automatización, puesta en común |
-| 18-20 | Por definir | — |
+| 18 | Duelo de herramientas | Misma pregunta de investigación, 4 herramientas distintas (Perplexity, ChatGPT, Google, NotebookLM), puesta en común |
+| 19 | Revisión cruzada | En parejas, presentáis vuestro proyecto grande y el compañero hace de "cliente exigente" |
+| 20 | Presentaciones finales | Cada persona/equipo presenta su mini-proyecto y proyecto grande al resto del grupo |

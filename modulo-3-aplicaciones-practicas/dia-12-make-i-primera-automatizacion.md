@@ -1,6 +1,6 @@
 # Día 12 — Make I: primera automatización
 
-**Módulo 3 · Aplicaciones Prácticas de ChatGPT**
+**Módulo 3 · Aplicaciones Prácticas y Proyecto**
 
 ---
 
@@ -8,171 +8,194 @@
 
 Rápido:
 
-> **¿Qué diferencia hay entre automatización y aumento cuando la IA cambia una tarea de tu trabajo?**
+> **¿Qué obligación legal tienes en la UE si generas contenido con IA que se hace pasar por real?**
 
 Si lo recuerdas sin mirar, estás listo. Si no, echa un vistazo al día 11 antes de continuar.
 
 ---
 
-## De hablar con la IA a que la IA trabaje sola
+## De entender agentes a construir uno
 
-Todo lo que has hecho hasta ahora en el curso tiene algo en común: **tú abres una herramienta, escribes, y lees el resultado**. Aunque el día 9 viste agentes que actúan por su cuenta, siempre había alguien iniciando la conversación.
+En el día 9 viste qué es un agente: algo que persigue un objetivo y encadena pasos por sí solo. Hoy dejáis de ser espectadores y empezáis a construir: **Make** es la herramienta con la que vais a montar vuestra primera automatización sin escribir una línea de código.
 
-Hoy cambia eso. Vas a construir un sistema que se dispara solo, hace su trabajo, y te entrega el resultado sin que tengas que abrir nada. Eso es una **automatización**, y **Make** es la herramienta con la que la vas a construir — sin escribir una sola línea de código.
-
-Esto no es un ejercicio teórico: hoy arranca tu **proyecto del curso**, una automatización con IA + Make que te servirá como pieza de portfolio para enseñar a un futuro empleador. Primero practicas el mecanismo con un ejemplo guiado, y al final del día eliges tu propia idea y le aplicas todo lo aprendido. El mini-proyecto se construye en los próximos tres días (12-14) y forma parte de lo que presentarás el día 20.
+Es también el arranque del **mini-proyecto** (días 12-14) que definiste ayer en tu brief — hoy construyes la primera versión, mínima, de esa idea.
 
 ---
 
 ## Qué es Make
 
-**Make** (antes Integromat) es una herramienta de automatización visual: en lugar de programar, conectas cajas en un lienzo y decides qué información pasa de una a otra. Cuando algo ocurre (llega un email, alguien rellena un formulario), Make ejecuta la cadena de pasos que le hayas diseñado, automáticamente.
+Make (antes Integromat) es una herramienta **no-code** para conectar aplicaciones y automatizar tareas repetitivas: cuando pasa algo en una app, Make hace algo en otra, sin que tengas que intervenir manualmente cada vez.
 
-**Por qué Make y no otra herramienta:**
+La lógica es siempre la misma:
 
-| Herramienta | Por qué la descartamos (o no) |
+> **Cuando ocurre X (disparador) → haz Y (una o varias acciones)**
+
+Ejemplos cotidianos de esto que probablemente ya conoces sin llamarlo "automatización":
+
+- Cuando alguien rellena un formulario → se añade una fila a una hoja de cálculo
+- Cuando llega un email con una factura → se guarda el adjunto en una carpeta
+- Cuando se publica un post → se envía un aviso a un canal de Slack
+
+---
+
+## Los tres bloques de un escenario
+
+En Make, cada automatización se llama **escenario**. Todo escenario se construye con tres piezas:
+
+| Bloque | Qué es | Ejemplo |
+|---|---|---|
+| **Trigger (disparador)** | El evento que arranca el escenario | Llega un email nuevo, se envía un formulario, pasa una hora concreta |
+| **Módulos (acciones)** | Los pasos que se ejecutan después del trigger, en orden | Guardar un dato, enviar un mensaje, crear un archivo |
+| **Conexiones** | Las cuentas de las apps que Make necesita para actuar en tu nombre | Tu cuenta de Gmail, Google Sheets, Slack... |
+
+Un escenario mínimo tiene **un trigger + al menos un módulo**. A partir de ahí se puede encadenar todo lo que haga falta — eso lo veréis en los días 13 y 14.
+
+---
+
+## Tour por la interfaz
+
+Antes de construir nada, familiarízate con dónde está cada cosa al entrar en Make:
+
+- **Lienzo (canvas):** el espacio central donde se colocan y conectan los módulos, de izquierda a derecha
+- **Botón "+" para añadir módulos:** cada módulo representa una app (Gmail, Sheets, Slack...) y una acción dentro de esa app
+- **Panel de configuración de cada módulo:** se abre al hacer clic en un módulo; aquí defines qué datos usa y de dónde los saca
+- **Botón Run once:** ejecuta el escenario una sola vez manualmente, para probarlo sin esperar a que ocurra el trigger real
+- **Interruptor ON/OFF (Scheduling):** activa o desactiva el escenario para que se ejecute solo cuando ocurra el trigger
+
+---
+
+## Antes de empezar: prueba guiada
+
+Crea una cuenta gratuita en Make (si no la tienes) y monta un escenario mínimo — **trigger + un módulo** — antes de pasar al catálogo de ejercicios. Un buen primero: **trigger "Schedule" (a una hora fija) → módulo que te envíe un email**. Usa **Run once** para probarlo sin esperar al disparador real; si algo falla, Make marca en rojo el módulo con el error.
+
+Con eso funcionando, ya tienes soltura para atacar el catálogo de abajo.
+
+---
+
+## Catálogo de ejercicios — elige tu ruta
+
+A partir de aquí, el día es fundamentalmente práctico: un catálogo de automatizaciones de ejemplo, organizadas por **nivel de dificultad** y por **ámbito**. No hace falta hacerlas todas — elige al menos una de Nivel 1, una de Nivel 2, y si te sobra tiempo, prueba una de Nivel 3. Intenta que al menos una de las que elijas se parezca al problema real de tu mini-proyecto.
+
+### Nivel 1 — Trigger + una acción
+
+El objetivo es soltura básica: conectar un disparador con una única acción, sin lógica adicional.
+
+| Ámbito | Automatización a construir |
 |---|---|
-| **Zapier** | Referencia del sector, pero el plan gratuito es muy limitado y se encarece rápido |
-| **n8n** | Potente y gratuito si te lo instalas tú mismo, pero requiere más conocimiento técnico para empezar |
-| **Make** | Plan gratuito generoso, interfaz visual muy intuitiva y **nodo nativo de ChatGPT/OpenAI** — la razón principal por la que lo usamos en este curso |
-
----
-
-## El vocabulario básico de Make
-
-Antes de tocar la interfaz, cuatro conceptos que vas a usar todo el rato:
-
-| Concepto | Qué es | Analogía |
-|---|---|---|
-| **Escenario (scenario)** | Una automatización completa, de principio a fin | Una receta de cocina completa |
-| **Módulo (module)** | Cada caja individual dentro del escenario — una acción o una app conectada | Un paso de la receta |
-| **Disparador (trigger)** | El primer módulo: el evento que arranca todo el escenario | "Cuando llegue un pedido..." |
-| **Conexión (connection)** | El enlace entre dos módulos por el que viaja la información | La flecha que une un paso con el siguiente |
-
-Un escenario siempre sigue la misma lógica: **algo ocurre → Make hace algo con ello → entrega un resultado.**
-
----
-
-## El lienzo de Make
-
-Cuando entras en un escenario nuevo, ves un lienzo (canvas) vacío con un único botón: añadir el primer módulo, que siempre es el disparador. A partir de ahí:
-
-- Cada módulo nuevo se añade con el icono **+** a la derecha del anterior
-- Las líneas entre módulos muestran el orden de ejecución
-- El botón **Run once** ejecuta el escenario una sola vez, para probarlo mientras lo construyes — así no tienes que esperar a que se dispare solo
-- Cada vez que ejecutas el escenario, Make guarda un registro (**historial**) de qué pasó en cada módulo — fundamental para depurar cuando algo falla
-
-**Ojo con esto:** mientras construyes y pruebas, el escenario está **desactivado** por defecto. No se ejecuta solo hasta que tú lo actives explícitamente (interruptor arriba a la izquierda). Es una medida de seguridad — no vas a mover datos reales sin querer mientras aprendes.
-
----
-
-## Los disparadores más comunes
-
-El disparador define cuándo arranca tu automatización. Los tres tipos que vas a usar en este curso:
-
-| Tipo de disparador | Cuándo se usa | Ejemplo |
-|---|---|---|
-| **Webhook** | Cuando otra app o formulario avisa a Make en el momento en que ocurre algo | Alguien rellena un Google Form |
-| **Watch (vigilancia)** | Make revisa periódicamente una app por si hay algo nuevo | Revisar la bandeja de Gmail cada 15 min por si llega un email nuevo |
-| **Programado (scheduled)** | Se dispara a una hora fija, sin depender de ningún evento externo | Todos los días a las 8:00 |
-
-Para tu primera automatización de hoy vas a usar un **webhook** o un **watch**, según la idea de tu proyecto — son los más fáciles de probar en clase porque puedes disparar el evento tú mismo.
-
----
-
-## Construyendo tu primera automatización
-
-El objetivo de hoy es simple a propósito: un escenario de **dos o tres módulos** que funcione de principio a fin. Nada de lógica condicional ni IA todavía — eso llega mañana.
-
-**Estructura mínima:**
-
-1. **Disparador:** algo que puedas provocar tú mismo en clase (rellenar un formulario, enviarte un email, añadir una fila a una hoja de cálculo)
-2. **Acción:** qué hace Make con ese dato (guardarlo en otro sitio, enviarte una notificación)
-
-**Ejemplo guiado (el que vas a replicar en clase):**
-
-> Formulario de Google Forms → nuevo módulo de Google Sheets que añade una fila con la respuesta.
-
-Este flujo no usa IA todavía a propósito: el objetivo de hoy es que entiendas el mecanismo — disparador, módulo, conexión, mapeo de datos — antes de meter ChatGPT en la ecuación mañana.
-
-### Mapear datos entre módulos
-
-Lo más importante que vas a aprender hoy: cuando conectas un módulo a otro, Make te deja **arrastrar campos del módulo anterior** (nombre, email, fecha...) al módulo siguiente. Eso es "mapear datos" — le dices a Make exactamente qué dato de un paso usar en el siguiente, en vez de escribirlo a mano. Es la base de todo lo que construirás el resto del curso.
-
----
-
-## Ejercicio 1 — Crea tu cuenta y explora el lienzo
-
-Crea tu cuenta gratuita en Make. Antes de construir nada, dedica 5 minutos a explorar el lienzo: dónde está el botón de añadir módulo, dónde está "Run once", dónde se ve el historial de ejecuciones.
-
----
-
-## Ejercicio 2 — Construye el escenario guiado
-
-Replica el flujo del ejemplo: **Google Forms → Google Sheets**. Rellena el formulario de prueba y usa "Run once" para comprobar que la fila aparece correctamente en la hoja.
+| **Atención al cliente** | Cuando llega un email nuevo a una bandeja → se reenvía automáticamente a otra dirección o canal |
+| **Ventas / CRM** | Cuando se añade una fila nueva en una hoja de leads → se envía una notificación por email |
+| **Marketing / redes** | A una hora programada cada día → se envía un recordatorio con la tarea de contenido del día |
+| **RRHH** | Cuando alguien rellena un formulario de "alta de empleado" → se crea automáticamente una fila en una hoja de seguimiento |
+| **Administración** | Cuando llega un email con la palabra "factura" en el asunto → se guarda el adjunto en una carpeta de Drive |
+| **Educación / formación** | Cuando un alumno entrega un formulario → se le envía automáticamente un email de confirmación de recepción |
 
 <details>
-<summary>Si algo falla</summary>
+<summary>Qué comprobar al terminar</summary>
 
-- Revisa el historial de ejecución: Make te dice en qué módulo se cortó y por qué
-- El error más común es no tener autorizada la conexión con la app (Google, en este caso) — Make te lo pide la primera vez que usas cada módulo
-- Si el dato no llega mapeado, revisa que arrastraste el campo correcto del módulo anterior, no que lo escribiste a mano
+- El trigger detecta el evento sin que tengas que forzarlo manualmente
+- La acción se ejecuta con el dato correcto (no un valor de prueba fijo, sino el dato real que llegó por el trigger)
 
 </details>
 
 ---
 
-## Trabajo en equipo — Carrera de automatizaciones
+### Nivel 2 — Trigger + dos o tres acciones encadenadas
 
-*(30 minutos)*
+Aquí el reto es pasar datos de un módulo a otro: lo que genera el paso 1 lo usa el paso 2.
 
-### El reto
+| Ámbito | Automatización a construir |
+|---|---|
+| **Atención al cliente** | Nuevo mensaje en un formulario de contacto → se guarda en una hoja de registro → se envía un aviso a un canal de equipo |
+| **Ventas / CRM** | Nuevo lead en una hoja → se añade a una lista de contactos → se envía un email de bienvenida automático |
+| **Marketing / redes** | Se publica un evento en un calendario → se crea un recordatorio → se envía un email al equipo con la fecha y los detalles |
+| **RRHH** | Se recibe una solicitud de vacaciones por formulario → se registra en una hoja de control → se notifica al responsable por email |
+| **Administración** | Llega una factura por email → se guarda el adjunto en Drive → se añade una fila en una hoja con el nombre del archivo y la fecha |
+| **Logística / inventario** | El stock de un producto (en una hoja) baja de un número concreto → se registra una alerta → se envía un aviso al responsable de compras |
 
-En parejas, cada equipo recibe un disparador distinto (formulario, email programado, nueva fila en hoja de cálculo) y debe construir el escenario de dos módulos más rápido posible, probándolo con "Run once" hasta que funcione sin errores.
+<details>
+<summary>Dónde se suele atascar la gente en este nivel</summary>
 
-### Puesta en común
+- Olvidar que el dato de un módulo (por ejemplo, el email del remitente) hay que **mapearlo explícitamente** en el siguiente módulo, no aparece solo
+- No probar con **Run once** después de cada módulo nuevo, y descubrir el error tres pasos más tarde
 
-Cada pareja enseña su escenario funcionando en directo. Comentad:
-- ¿Qué error os costó más resolver?
-- ¿Qué disparador os pareció más fácil de probar en clase, y cuál más útil en un caso real?
-- De los disparadores que habéis visto hoy, ¿cuál creéis que encajará mejor con el proyecto que vais a elegir al final del día?
+</details>
 
 ---
 
-## Elige tu proyecto
+### Nivel 3 — Con condición (router o filtro)
 
-*(30 minutos)*
+Introduce una decisión: el flujo hace una cosa u otra según el dato que llega. Todavía no habéis visto el módulo de IA (eso es mañana) — aquí la condición se basa en datos simples: texto, número o fecha.
 
-Ya conoces el mecanismo — disparador, módulo, conexión, mapeo de datos. Ahora te toca elegir la idea de tu **proyecto del curso**: una automatización con IA + Make que te servirá como pieza de portfolio para enseñar a un futuro empleador. Es un proyecto libre — puede estar orientado a buscar empleo o a cualquier otro problema real del sector al que quieras volver.
+| Ámbito | Automatización a construir |
+|---|---|
+| **Atención al cliente** | Nuevo email recibido → si el asunto contiene "urgente" se notifica por un canal prioritario, si no, se registra en una hoja para revisar más tarde |
+| **Ventas / CRM** | Nuevo lead en una hoja → si el presupuesto indicado supera un umbral, se notifica al equipo comercial; si no, se añade a una lista de seguimiento general |
+| **Marketing / redes** | Publicación programada → si la fecha es fin de semana, se pospone al lunes; si es entre semana, se publica según lo previsto |
+| **RRHH** | Solicitud de vacaciones → si las fechas coinciden con otra solicitud ya registrada, se marca como conflicto; si no, se aprueba automáticamente el registro |
+| **Administración** | Factura recibida por email → si el importe supera un límite, se envía a un responsable para validación manual; si no, se archiva directamente |
+| **Logística / inventario** | Nueva fila de pedido → si la cantidad supera el stock disponible, se genera una alerta de reposición; si no, se marca como pedido listo |
 
-**Ideas para inspirarte** (elige una, adáptala a tu sector, o propón la tuya siguiendo el mismo patrón):
+<details>
+<summary>Pista técnica</summary>
 
-| Idea | Problema que resuelve | Qué generaría la IA |
-|---|---|---|
-| **Respuesta automática de atención al cliente** | Consultas repetitivas por email/WhatsApp que consumen tiempo | Respuestas de texto adaptadas a cada consulta |
-| **Generador y publicador de contenido para redes** | Crear y publicar contenido de forma constante | Textos e imágenes para publicaciones |
-| **Triage de leads/emails entrantes** | Clasificar manualmente cada entrada según urgencia o tipo | Clasificación y borrador de respuesta |
-| **Informe periódico automático** | Recopilar y resumir datos a mano cada semana | Resumen del informe en lenguaje natural |
-| **Onboarding automatizado** | Dar la bienvenida y explicar los primeros pasos a cada cliente/empleado nuevo | Mensajes de bienvenida y contenido personalizado |
-| **Asistente de búsqueda de empleo** | Filtrar ofertas, adaptar CV/carta a cada oferta o preparar entrevistas | CV, cartas o preguntas de entrevista adaptadas a cada caso |
+En Make esto se hace con un **Router** (divide el flujo en varias rutas, cada una con un filtro) o con un **Filter** en un único camino (solo deja pasar los datos que cumplen la condición). No necesitas más que eso para completar estos ejercicios — el resto de lógica condicional avanzada lo veréis en el día 13.
 
-> *Consejo:* si te interesa un sector concreto (hostelería, comercio, administración, sanidad...), adapta el ejemplo del problema a ese sector — el proyecto pesa más en una entrevista si demuestra que entiendes el día a día de ese trabajo.
+</details>
 
-Consulta el menú completo, la plantilla de brief y el calendario de fases en [proyecto-final.md](../proyecto-final.md). Rellena el brief de una página — no hace falta que sea definitivo, pero necesitas saber qué quieres automatizar antes de seguir con Make II mañana.
+---
 
-Por último, aplica lo aprendido hoy a tu propia idea: **¿qué dispara tu automatización en la vida real** (un formulario, un email, una hoja de cálculo) **y qué acción dispara ese evento?** No hace falta construirlo todavía — con dejarlo definido en el brief es suficiente. Mañana (día 13) añades el nodo de OpenAI y la lógica condicional, así que el escenario seguirá creciendo.
+### Nivel 4 (reto opcional) — Tu propio caso, desde cero
+
+Diseña y construye una automatización completa para un problema real de tu día a día o del sector al que quieres volver, sin plantilla dada. Debe tener como mínimo trigger + dos acciones, y si te atreves, una condición.
+
+<details>
+<summary>Cómo elegir el caso</summary>
+
+Piensa en una tarea que repites cada semana y que sigue siempre el mismo patrón: "cuando pasa esto, siempre hago aquello". Si te cuesta encontrar una, vuelve a tu brief del mini-proyecto (día 10-11) — probablemente ya tienes ahí un candidato perfecto.
+
+</details>
+
+---
+
+## Conecta el disparador con tu mini-proyecto
+
+Antes de acabar el día, vuelve a tu brief y monta en Make **el trigger real de tu mini-proyecto** (aunque el resto del flujo todavía esté vacío o sea muy simple). Es la base sobre la que seguirás construyendo en los días 13 y 14.
+
+<details>
+<summary>Qué apuntar</summary>
+
+- ¿Qué app dispara el flujo?
+- ¿Qué dato necesitas capturar en ese primer paso para poder usarlo después?
+
+</details>
+
+---
+
+## Trabajo en equipo — Reto por parejas
+
+*(25 minutos)*
+
+### El reto
+
+En parejas, elegid **un ejercicio de Nivel 2 o Nivel 3 del catálogo** (de un ámbito distinto al de vuestro propio proyecto) y construidlo completo en Make antes de que se acabe el tiempo.
+
+### Puesta en común
+
+- ¿Qué ámbito y ejercicio elegisteis, y por qué?
+- ¿Dónde os atascasteis: en el trigger, en pasar datos entre módulos, o en la condición (si la había)?
+- ¿Qué habríais tardado en hacer esto mismo a mano, sin Make?
 
 ---
 
 ## Lo que aprendiste hoy
 
-- Hoy arrancó tu proyecto del curso: al final del día elegiste una idea y escribiste el brief, ya con el mecanismo de Make aprendido
-- Make automatiza tareas conectando módulos en un lienzo visual, sin escribir código
-- Un escenario siempre sigue la lógica: disparador → módulo(s) → resultado
-- Los tres disparadores más comunes son webhook, watch (vigilancia periódica) y programado
-- "Run once" te deja probar el escenario paso a paso mientras lo construyes, sin esperar a que se dispare solo
-- Mapear datos es arrastrar un campo de un módulo anterior al siguiente, en vez de escribirlo a mano — es la base de cualquier flujo en Make
+- Make conecta aplicaciones con la lógica "cuando ocurre X → haz Y", sin necesidad de programar
+- Todo escenario se construye con tres piezas: trigger, módulos (acciones) y conexiones a las apps
+- **Run once** te permite probar un escenario paso a paso sin esperar al trigger real
+- Un **Router** o **Filter** permite que el flujo tome caminos distintos según el dato que llega, sin usar IA todavía
+- Las mismas automatizaciones (aviso, registro, alerta condicional) se repiten en casi cualquier ámbito: atención al cliente, ventas, RRHH, marketing o administración
+- Ya tienes montado el primer trigger de tu mini-proyecto — mañana lo conectas con IA
 
 ---
 
-*Mañana: Make II — añades el nodo de OpenAI y lógica condicional a tu automatización.*
+*Mañana: Make II — el nodo de OpenAI y la lógica condicional para que tu flujo tome decisiones.*
